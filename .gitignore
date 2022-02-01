@@ -1,0 +1,6 @@
+dbt_example/target/
+dbt_packages/
+logs/
+.venv
+dbt_example/.idea
+*~
