@@ -1,6 +1,6 @@
 with joined as (
 select cases.*, vaccination.fully_vaccinated, vaccination.by_date
-from {{ ref('cases_per_muni_4week_after') }} as cases
+from {{ ref('cases_per_muni_after') }} as cases
 left join {{ ref('vaccination_per_muni_by_date') }} as vaccination
 on cases.nis5 = vaccination.nis5
 ),
